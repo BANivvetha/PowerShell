@@ -23,13 +23,6 @@ Sure! Here’s a list of commonly used "Set" cmdlets in PowerShell that are not 
      Set-Service -Name "wuauserv" -StartupType Automatic
      ```
 
-#### 4. **Set-Item**
-   - **Description**: Changes the value of a specified item, such as a registry key or a file.
-   - **Example**:
-     ```powershell
-     Set-Item -Path "HKCU:\Software\MyApp" -Value "NewValue"
-     ```
-
 #### 5. **Set-Variable**
    - **Description**: Sets the value of a variable.
    - **Example**:
@@ -51,11 +44,6 @@ Sure! Here’s a list of commonly used "Set" cmdlets in PowerShell that are not 
      Set-Alias -Name ls -Value Get-ChildItem
      ```
 
-#### 8. **Set-ItemProperty**
-   - **Description**: Modifies the properties of an item, such as a file or registry key.
-   - **Example**:
-     ```powershell
-     Set-ItemProperty -Path "HKCU:\Software\MyApp" -Name "SettingName" -Value "NewValue"
      ```
 
 #### 9. **Set-ExecutionPolicy**
@@ -65,12 +53,7 @@ Sure! Here’s a list of commonly used "Set" cmdlets in PowerShell that are not 
      Set-ExecutionPolicy Unrestricted
      ```
 
-#### 10. **Set-PSBreakpoint**
-   - **Description**: Sets a breakpoint in a script or function for debugging.
-   - **Example**:
-     ```powershell
-     Set-PSBreakpoint -Script "C:\Scripts\MyScript.ps1" -Line 10
-     ```
+
 
 ### Conclusion
 
