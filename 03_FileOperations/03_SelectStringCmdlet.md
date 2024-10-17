@@ -24,7 +24,7 @@ This command will return all lines in `example.txt` that contain the term "searc
 
 #### 2. **Search Recursively in All Files in a Directory**
 ```powershell
-Select-String -Path "C:\Temp\*" -Pattern "searchTerm" -Recurse
+  Get-ChildItem -Path C:\Test\*.txt  -Recurse | Select-String -Pattern "search"
 ```
 This command searches for "searchTerm" in all files within the `C:\Temp` directory and its subdirectories.
 
