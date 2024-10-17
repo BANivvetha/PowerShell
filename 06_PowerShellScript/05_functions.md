@@ -87,44 +87,6 @@ $result = Divide-Numbers -Numerator 10 -Denominator 0
 # Output: Error: Cannot divide by zero.
 ```
 
-### Example 5: Function with Cmdlet Binding
-
-Using `CmdletBinding` allows you to create functions that behave like cmdlets, including support for common parameters.
-
-```powershell
-function Get-CurrentDate {
-    [CmdletBinding()]
-    param ()
-
-    return Get-Date
-}
-
-# Call the function
-$currentDate = Get-CurrentDate
-Write-Host "Current Date and Time: $currentDate"
-```
-
-### Example 6: Function with Pipeline Support
-
-You can also create functions that accept input from the pipeline.
-
-```powershell
-function ConvertTo-Miles {
-    [CmdletBinding()]
-    param (
-        [double]$Kilometers
-    )
-
-    process {
-        $miles = $Kilometers * 0.621371
-        Write-Output $miles
-    }
-}
-
-# Use the function with a pipeline
-1, 5, 10 | ConvertTo-Miles  # Converts 1, 5, and 10 kilometers to miles.
-```
-
 ### Summary
 
 Functions in PowerShell are powerful tools for creating reusable and organized code. They can take parameters, return values, and handle errors, making them essential for effective scripting. By using functions, you can significantly improve the clarity and maintainability of your PowerShell scripts.
