@@ -15,7 +15,6 @@ Write-Host $message
 ### Variable Naming Conventions
 
 - Variable names can include letters, numbers, and underscores.
-- They cannot start with a number.
 - It’s common to use camelCase or PascalCase for readability.
 
 ### Data Types
