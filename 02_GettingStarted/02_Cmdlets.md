@@ -23,9 +23,11 @@ Cmdlets in PowerShell are specialized .NET classes that perform specific functio
 
 ### 4. **Get-Service**
    - **Description**: Retrieves the status of services on a local or remote machine.
+   <a href="https://learn.microsoft.com/en-us/powershell/module/microsoft.powershell.management/get-service?view=powershell-7.5"> Microsoft Documentation </a>
    - **Example**:
      ```powershell
      Get-Service
+     Get-Service | where-object {$_.Status -eq 'Running'} | Select-Object Name
      ```
 
 ### 5. **Stop-Service**
